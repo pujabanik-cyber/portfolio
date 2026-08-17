@@ -1,0 +1,711 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #f8f6f1;
+    color: #252525;
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #f8f6f1;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    border-bottom: 1px solid #e4e0d7;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #9a6b4c;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #9a6b4c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 90vh;
+
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+
+    align-items: center;
+
+    padding: 80px 10%;
+
+    gap: 80px;
+}
+
+.small-title {
+    letter-spacing: 4px;
+    font-size: 13px;
+    color: #9a6b4c;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(55px, 7vw, 100px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #9a6b4c;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 13px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #252525;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #9a6b4c;
+}
+
+.secondary-btn {
+    border: 1px solid #252525;
+}
+
+.secondary-btn:hover {
+    background: #252525;
+    color: white;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    width: 100%;
+    max-width: 430px;
+    justify-self: center;
+}
+
+.hero-image img {
+    height: 530px;
+    border-radius: 220px 220px 20px 20px;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+    padding: 110px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #9a6b4c;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 52px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: #efebe3;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-image img {
+    height: 500px;
+    border-radius: 10px;
+}
+
+.about-text h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.skill-card {
+    padding: 25px;
+    background: white;
+    border: 1px solid #e8e3da;
+    border-radius: 10px;
+}
+
+.skill-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.skill-top h3 {
+    font-size: 16px;
+}
+
+.skill-top span {
+    color: #9a6b4c;
+    font-weight: 600;
+}
+
+.progress {
+    height: 6px;
+    background: #e5e1d8;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #9a6b4c;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-section {
+    background: #252525;
+    color: white;
+}
+
+.education-section .section-heading p {
+    color: #c59b7a;
+}
+
+.timeline {
+    max-width: 850px;
+    margin: auto;
+}
+
+.timeline-item {
+    display: block;
+    padding: 35px 0;
+}
+.year {
+    color: #c59b7a;
+    font-size: 14px;
+}
+
+.timeline-content h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+    color: #c59b7a;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    color: #aaa;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-section {
+    background: #f8f6f1;
+}
+
+.projects-grid {
+    max-width: 900px;
+    margin: auto;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-image img {
+    height: 100%;
+    min-height: 350px;
+}
+
+.project-info {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-info span {
+    color: #9a6b4c;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.project-info h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.project-info p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.project-info a {
+    font-weight: 600;
+}
+
+.project-info a:hover {
+    color: #9a6b4c;
+}
+
+
+/* =========================
+   CREATIVE SIDE
+========================= */
+
+.creative-section {
+    background: #efebe3;
+}
+
+.creative-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.creative-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.creative-card img {
+    height: 400px;
+    transition: 0.5s;
+}
+
+.creative-card:hover img {
+    transform: scale(1.05);
+}
+
+.creative-overlay {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.8)
+    );
+
+    color: white;
+}
+
+.creative-overlay h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+}
+
+.creative-overlay p {
+    color: #ddd;
+}
+
+
+/* =========================
+   HOBBIES
+========================= */
+
+.hobbies-section {
+    text-align: center;
+}
+
+.hobbies {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.hobby {
+    padding: 30px 15px;
+    border: 1px solid #ddd6ca;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hobby:hover {
+    transform: translateY(-6px);
+    background: #efebe3;
+}
+
+.hobby span {
+    font-size: 35px;
+}
+
+.hobby h3 {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    background: #9a6b4c;
+    color: white;
+    padding: 100px 10%;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.contact-text > p:first-child {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.contact-text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.contact-text p {
+    color: #f1e5dc;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.contact-info span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #ead5c4;
+}
+
+.contact-info a {
+    font-size: 18px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #252525;
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 70px 7%;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        max-width: 350px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .creative-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .section {
+        padding: 80px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 40px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hobbies {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-text h2 {
+        font-size: 42px;
+    }
+}
+/* =========================
+   GRAPHIC DESIGN GALLERY
+========================= */
+
+.graphic-gallery {
+    padding: 100px 10%;
+    background: #efebe3;
+}
+
+.gallery-description {
+    color: #666;
+    margin-top: 10px;
+}
+
+.graphic-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.graphic-item {
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.graphic-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.graphic-item:hover img {
+    transform: scale(1.04);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .graphic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .graphic-item img {
+        height: auto;
+    }
+
+}
+
+
+
+   
